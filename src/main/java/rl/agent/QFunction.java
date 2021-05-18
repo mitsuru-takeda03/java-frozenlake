@@ -4,6 +4,7 @@ import rl.env.Action;
 import rl.env.State;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Q関数
@@ -33,6 +34,10 @@ public class QFunction {
 
     public double getQ(State state, Action action) {
         return qTable.get(state.toInt()).get(Action.toInt(action));
+    }
+
+    public double getMaxQ(State state){
+        return Collections.max(qTable.get(state.toInt()));
     }
 
     public void setQ(State state, Action action, double q) {
