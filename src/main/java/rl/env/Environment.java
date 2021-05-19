@@ -56,6 +56,7 @@ public class Environment {
         else if (action == Action.Left)
             state_x -= 1 * isSlip;
         state = new State(new ArrayList<>(Arrays.asList(state_x, state_y)));
+        System.out.println(state);
         return getStatus(state);
     }
 
