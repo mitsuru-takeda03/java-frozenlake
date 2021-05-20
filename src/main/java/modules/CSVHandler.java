@@ -1,4 +1,4 @@
-package rl.agent;
+package modules;
 
 import java.awt.image.AreaAveragingScaleFilter;
 import java.io.IOException;
